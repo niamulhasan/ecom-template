@@ -554,7 +554,7 @@ body {
   -webkit-transition: 0.3s;
   transition: 0.3s;
   cursor: pointer;
-  background-image: url("/dist/assets/icons/svgs/cancel.svg");
+  background-image: url("../../dist/assets/icons/svgs/cancel.svg");
   position: relative;
   margin-left: -136px;
   margin-top: -10px;
@@ -606,12 +606,12 @@ body {
 }
 
 .cart-holder .cart-increase {
-  background-image: url("/dist/assets/icons/svgs/plus.svg");
+  background-image: url("../../dist/assets/icons/svgs/plus.svg");
   margin-left: 18px;
 }
 
 .cart-holder .cart-decrease {
-  background-image: url("/dist/assets/icons/svgs/minus.svg");
+  background-image: url("../../dist/assets/icons/svgs/minus.svg");
   margin-right: 18px;
 }
 
@@ -625,7 +625,7 @@ body {
   -webkit-transition: 0.3s;
   transition: 0.3s;
   cursor: pointer;
-  background-image: url("/dist/assets/icons/svgs/cancel.svg");
+  background-image: url("../../dist/assets/icons/svgs/cancel.svg");
   position: relative;
   margin-left: -136px;
   margin-top: -10px;
@@ -679,11 +679,11 @@ body {
 }
 
 .icon-arrow-left {
-  background-image: url("/dist/assets/icons/svgs/left-arrow.svg");
+  background-image: url("../../dist/assets/icons/svgs/left-arrow.svg");
 }
 
 .icon-arrow-right {
-  background-image: url("/dist/assets/icons/svgs/next.svg");
+  background-image: url("../../dist/assets/icons/svgs/next.svg");
 }
 
 .card {
