@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+    <link rel="stylesheet" href="dist/css/style.css">
+</head>
+
+<body>
+    <!-- As a heading -->
+    <nav class="navbar navbar-light main-nav">
+        <div class="container d-flex flex-wrap justify-content-between">
+            <div class="child d-none d-md-block"><img src="./dist/assets/Logo.png" class="logo text-logo " alt="esell">
+            </div>
+            <div class="child d-md-none"><img src="./dist/assets/main_icon.png" class="logo no-text-logo " alt="esell">
+            </div>
+            <div class="child flex-fill d-flex justify-content-center">
+                <form action="">
+                    <input type="text" placeholder="What are you looking for?" class="form-control search-box" />
+                </form>
+            </div>
+            <div class="child">
+                <div class="icon-set">
+                    <span class="btn nav-button"><img class="icon-svg-img" src="./dist/assets/icons/svgs/Heart.svg"
+                            alt=""></span>
+                    <!-- <span class="btn nav-button" data-bs-toggle="collapse" data-bs-target="#collapseCart" aria-expanded="false" aria-controls="collapseCart"><img class="icon-svg-img"
+                            src="./dist/assets/icons/svgs/shopping-cart.svg" alt=""></span> -->
+                    <span class="btn nav-button" onclick="showCart()"><img class="icon-svg-img"
+                            src="./dist/assets/icons/svgs/shopping-cart.svg" alt=""></span>
+                    <span class="btn nav-button"><img class="icon-svg-img" src="./dist/assets/icons/svgs/user.svg"
+                            alt=""></span>
+                </div>
+            </div>
+        </div>
+
+    </nav>
+    <nav class="navbar p-0 navbar-light second-nav">
+        <div class="container p-0 d-flex flex-column flex-lg-row">
+            <div class="item order-1">
+                <div class="big-menu-btn" data-bs-toggle="collapse" href="#collapseBigmenu" role="button"
+                    aria-expanded="false" aria-controls="collapseBigmenu">
+                    <span class="icon">
+                        <img src="./dist/assets/icons/svgs/three-lines.svg" alt="">
+                    </span>
+                    <span class="text">Department</span>
+                </div>
+                <div class="collapse big-menu-holder d-lg-block" id="collapseBigmenu">
+                    <ul class="big-menu">
+                        <li class="big-menu-item">
+                            <span class="title">Fashion</span>
+                            <span class="icon"><img src="./dist/assets/icons/pngs/fashion.png" alt=""></span>
+                            <div class="mega-menu">
+                                <div class="row">
+                                    <div class="col col-12 col-md-7">
+                                        <div class="row">
+                                            <div class="col col-6 col-md-4">
+                                                <div class="row">
+                                                    <div class="col-12">
+                                                        <h5 class="title">Product</h5>
+                                                        <ul class="list-group no-border">
+                                                            <li class="list-group-item list-item" style="border: 0;"><a
+                                                                    href="#">Product 001</a></li>
+                                                            <li class="list-group-item list-item"><a href="#">Item
+                                                                    002</a></li>
+                                                            <li class="list-group-item list-item"><a href="#">Product
+                                                                    Item 003</a></li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="col-12">
+                                                        <h5 class="title pt-4">Product</h5>
+                                                        <ul class="list-group list no-border">
+                                                            <li class="list-group-item list-item" style="border: 0;"><a
+                                                                    href="#">Product 001</a></li>
+                                                            <li class="list-group-item list-item"><a href="#">Item
+                                                                    002</a></li>
+                                                            <li class="list-group-item list-item"><a href="#">Product
+                                                                    Item 003</a></li>
+                                                            <li class="list-group-item list-item"><a href="#">Product
+                                                                    004</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col col-6 col-md-4">
+                                                <h5 class="title">Product</h5>
+                                                <ul class="list-group list no-border">
+                                                    <li class="list-group-item list-item" style="border: 0;"><a
+                                                            href="#">Product 001</a></li>
+                                                    <li class="list-group-item list-item"><a href="#">Item 002</a></li>
+                                                    <li class="list-group-item list-item"><a href="#">Product Item
+                                                            003</a></li>
+                                                    <li class="list-group-item list-item"><a href="#">Product 004</a>
+                                                    </li>
+                                                    <li class="list-group-item list-item" style="border: 0;"><a
+                                                            href="#">Product 005</a></li>
+                                                    <li class="list-group-item list-item"><a href="#">Item 006</a></li>
+                                                    <li class="list-group-item list-item"><a href="#">Product Item
+                                                            007</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col col-6 col-md-4">
+                                                <h5 class="title">Product</h5>
+                                                <ul class="list-group list no-border">
+                                                    <li class="list-group-item list-item" style="border: 0;"><a
+                                                            href="#">Product 001</a></li>
+                                                    <li class="list-group-item list-item"><a href="#">Item 002</a></li>
+                                                    <li class="list-group-item list-item"><a href="#">Product Item
+                                                            003</a></li>
+                                                    <li class="list-group-item list-item"><a href="#">Product 004</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col col-12 col-md-5 p-4 featured">
+                                        <div class="row">
+                                            <div class="col col-12">
+                                                <div class="card img-fluid border-0 mt-3">
+                                                    <img class="card-img-top" src="./dist/assets/img/featured/1.png"
+                                                        alt="Card image" style="width:100%">
+                                                </div>
+                                            </div>
+                                            <div class="col col-12">
+                                                <div class="card img-fluid border-0 mt-3">
+                                                    <img class="card-img-top" src="./dist/assets/img/featured/2.png"
+                                                        alt="Card image" style="width:100%">
+                                                </div>
+                                            </div>
+                                            <div class="col col-6">
+                                                <div class="card img-fluid border-0 mt-3">
+                                                    <img class="card-img-top" src="./dist/assets/img/featured/3.png"
+                                                        alt="Card image" style="width:100%">
+                                                </div>
+                                            </div>
+                                            <div class="col col-6">
+                                                <div class="card img-fluid border-0 mt-3">
+                                                    <img class="card-img-top" src="./dist/assets/img/featured/4.png"
+                                                        alt="Card image" style="width:100%">
+                                                </div>
+                                            </div>
+                                            <div class="col col-12">
+                                                <button
+                                                    class="btn btn-primary pt-3 pb-3 w-100 rounded-pill mt-3 bg-custom-accent">See
+                                                    All
+                                                    Offers</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="big-menu-item">
+                            <span class="title">Flower Pot</span>
+                            <span class="icon"><img src="./dist/assets/icons/pngs/flower-pot.png" alt=""></span>
+                            <div class="mega-menu">
+                                <div class="row">
+                                    <div class="col col-12 col-md-7">
+                                        <div class="row">
+                                            <div class="col col-6 col-md-4">
+                                                <div class="row">
+                                                    <div class="col-12">
+                                                        <h5 class="title">Product</h5>
+                                                        <ul class="list-group no-border">
+                                                            <li class="list-group-item list-item" style="border: 0;"><a
+                                                                    href="#">Product 001</a></li>
+                                                            <li class="list-group-item list-item"><a href="#">Item
+                                                                    002</a></li>
+                                                            <li class="list-group-item list-item"><a href="#">Product
+                                                                    Item 003</a></li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="col-12">
+                                                        <h5 class="title pt-4">Product</h5>
+                                                        <ul class="list-group list no-border">
+                                                            <li class="list-group-item list-item" style="border: 0;"><a
+                                                                    href="#">Product 001</a></li>
+                                                            <li class="list-group-item list-item"><a href="#">Item
+                                                                    002</a></li>
+                                                            <li class="list-group-item list-item"><a href="#">Product
+                                                                    Item 003</a></li>
+                                                            <li class="list-group-item list-item"><a href="#">Product
+                                                                    004</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col col-6 col-md-4">
+                                                <h5 class="title">Product</h5>
+                                                <ul class="list-group list no-border">
+                                                    <li class="list-group-item list-item" style="border: 0;"><a
+                                                            href="#">Product 001</a></li>
+                                                    <li class="list-group-item list-item"><a href="#">Item 002</a></li>
+                                                    <li class="list-group-item list-item"><a href="#">Product Item
+                                                            003</a></li>
+                                                    <li class="list-group-item list-item"><a href="#">Product 004</a>
+                                                    </li>
+                                                    <li class="list-group-item list-item" style="border: 0;"><a
+                                                            href="#">Product 005</a></li>
+                                                    <li class="list-group-item list-item"><a href="#">Item 006</a></li>
+                                                    <li class="list-group-item list-item"><a href="#">Product Item
+                                                            007</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col col-6 col-md-4">
+                                                <h5 class="title">Product</h5>
+                                                <ul class="list-group list no-border">
+                                                    <li class="list-group-item list-item" style="border: 0;"><a
+                                                            href="#">Product 001</a></li>
+                                                    <li class="list-group-item list-item"><a href="#">Item 002</a></li>
+                                                    <li class="list-group-item list-item"><a href="#">Product Item
+                                                            003</a></li>
+                                                    <li class="list-group-item list-item"><a href="#">Product 004</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col col-12 col-md-5 p-4 featured">
+                                        <div class="row">
+                                            <div class="col col-12">
+                                                <div class="card img-fluid border-0 mt-3">
+                                                    <img class="card-img-top" src="./dist/assets/img/featured/1.png"
+                                                        alt="Card image" style="width:100%">
+                                                </div>
+                                            </div>
+                                            <div class="col col-12">
+                                                <div class="card img-fluid border-0 mt-3">
+                                                    <img class="card-img-top" src="./dist/assets/img/featured/2.png"
+                                                        alt="Card image" style="width:100%">
+                                                </div>
+                                            </div>
+                                            <div class="col col-6">
+                                                <div class="card img-fluid border-0 mt-3">
+                                                    <img class="card-img-top" src="./dist/assets/img/featured/3.png"
+                                                        alt="Card image" style="width:100%">
+                                                </div>
+                                            </div>
+                                            <div class="col col-6">
+                                                <div class="card img-fluid border-0 mt-3">
+                                                    <img class="card-img-top" src="./dist/assets/img/featured/4.png"
+                                                        alt="Card image" style="width:100%">
+                                                </div>
+                                            </div>
+                                            <div class="col col-12">
+                                                <button
+                                                    class="btn btn-primary pt-3 pb-3 w-100 rounded-pill mt-3 bg-custom-accent">See
+                                                    All
+                                                    Offers</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="big-menu-item">
+                            <span class="title">CCTV</span>
+                            <span class="icon"><img src="./dist/assets/icons/pngs/camera.png" alt=""></span>
+
+                        </li>
+                        <li class="big-menu-item">
+                            <span class="title">Music</span>
+                            <span class="icon"><img src="./dist/assets/icons/pngs/loudspeaker.png" alt=""></span>
+
+                        </li>
+                        <li class="big-menu-item">
+                            <span class="title">Photography</span>
+                            <span class="icon"><img src="./dist/assets/icons/pngs/camera2.png" alt=""></span>
+                        </li>
+                        <li class="big-menu-item">
+                            <span class="title">Furniture</span>
+                            <span class="icon"><img src="./dist/assets/icons/pngs/camera.png" alt=""></span>
+                        </li>
+                        <li class="big-menu-item">
+                            <span class="title">Health</span>
+                            <span class="icon"><img src="./dist/assets/icons/pngs/camera.png" alt=""></span>
+                            <div class="mega-menu">a</div>
+                        </li>
+                        <li class="big-menu-item">
+                            <span class="title">Health</span>
+                            <span class="icon"><img src="./dist/assets/icons/pngs/camera.png" alt=""></span>
+                        </li>
+                        <li class="big-menu-item">
+                            <span class="title">Photography</span>
+                            <span class="icon"><img src="./dist/assets/icons/pngs/camera2.png" alt=""></span>
+                        </li>
+                        <li class="big-menu-item">
+                            <span class="title">Flower Pot</span>
+                            <span class="icon"><img src="./dist/assets/icons/pngs/flower-pot.png" alt=""></span>
+                        </li>
+                        <li class="big-menu-item">
+                            <span class="title">CCTV</span>
+                            <span class="icon"><img src="./dist/assets/icons/pngs/camera.png" alt=""></span>
+                        </li>
+                        <li class="big-menu-item">
+                            <span class="title">Music</span>
+                            <span class="icon"><img src="./dist/assets/icons/pngs/loudspeaker.png" alt=""></span>
+                        </li>
+                        <li class="big-menu-item">
+                            <span class="title">Music</span>
+                            <span class="icon"><img src="./dist/assets/icons/pngs/loudspeaker.png" alt=""></span>
+                        </li>
+                        <li class="big-menu-item">
+                            <span class="title">Photography</span>
+                            <span class="icon"><img src="./dist/assets/icons/pngs/camera2.png" alt=""></span>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+            <div class="item order-2">
+                <ul class="row right-menu">
+                    <li class="col nav-menu-item pe-md-3">
+                        <a class="nav-link" href="#"><img src="./dist/assets/icons/svgs/new.svg" class="d-md-none"
+                                alt=""> <span class="d-none d-md-block">New Release</span></a>
+                    </li>
+                    <li class="col nav-menu-item pe-md-3">
+                        <a class="nav-link" href="#"><img src="./dist/assets/icons/svgs/man.svg" class="d-md-none"
+                                alt=""> <span class="d-none d-md-block">Men</span></a>
+                    </li>
+                    <li class="col nav-menu-item pe-md-3">
+                        <a class="nav-link" href="#">
+                            <img src="./dist/assets/icons/svgs/woman.svg" class="d-md-none" alt=""> <span
+                                class="d-none d-md-block">Women</span>
+                        </a>
+                    </li>
+                    <li class="col nav-menu-item pe-md-3">
+                        <div class="dropdown">
+                            <span class="btn" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                <img src="./dist/assets/icons/svgs/kid.svg" class="d-md-none" alt=""> <span
+                                    class="d-none d-md-block">Kids</span>
+                            </span>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                <li><a class="dropdown-item" href="#">Kids Item 1</a></li>
+                                <li><a class="dropdown-item" href="#">Kids Item 2</a></li>
+                                <li><a class="dropdown-item" href="#">Kids Item 3</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="col nav-menu-item pe-md-3">
+                        <a class="nav-link" href="#">
+                            <img src="./dist/assets/icons/svgs/sale.svg" class="d-md-none" alt=""> <span
+                                class="d-none d-md-block">Sale</span>
+                        </a>
+                    </li>
+                    <li class="col nav-menu-item pe-md-3">
+                        <a class="nav-link" href="#">
+                            <img src="./dist/assets/icons/svgs/collection.svg" class="d-md-none" alt=""> <span
+                                class="d-none d-md-block">Collections</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- <div class="container d-flex">
+            <div class="item" style="background-color: red;">1</div>
+            <div class="item order-0" style="background-color:#fff">
+                    <ul class="d-flex right-menu">
+                        <li class="nav-menu-item">
+                            <a class="nav-link" href="#">New Release</a>
+                        </li>
+                        <li class="nav-menu-item">
+                            <a class="nav-link" href="#">Men</a>
+                        </li>
+                        <li class="nav-menu-item">
+                            <a class="nav-link" href="#">Women</a>
+                        </li>
+                        <li class="nav-ment-item">
+                            <div class="dropdown">
+                                <button class="btn btn-link dropdown-toggle" type="button" id="dropdownMenuButton1"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Kids
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                    <li><a class="dropdown-item" href="#">Kids Item 1</a></li>
+                                    <li><a class="dropdown-item" href="#">Kids Item 2</a></li>
+                                    <li><a class="dropdown-item" href="#">Kids Item 3</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-menu-item">
+                            <a class="nav-link" href="#">Sale</a>
+                        </li>
+                        <li class="nav-menu-item">
+                            <a class="nav-link" href="#">Collections</a>
+                        </li>
+                    </ul>
+            </div>
+        </div> -->
+    </nav>
+    <div class="cart-holder">
+        <div class="shader" id="collapseCart">
+
+            <div class="the-cart" id="theCart">
+                <div class="head d-flex justify-content-between">
+                    <h3>Cart Review</h3>
+                    <div onclick="hideCart()" class="close-button"></div>
+                </div>
+                <hr class="hr-devider" />
+                <div class="products">
+                    <div class="d-flex justify-content-between pt-4">
+                        <img class="cart-image" src="/dist/assets/img/cart/image 194.png" alt="">
+                        <span class="cart-delete"></span>
+                        <div class="product-info align-self-center">
+                            <h5>Commodo Blown Lamp</h5>
+                            <ul class="d-flex count-actions">
+                                <li class="cart-add-remove cart-decrease"></li>
+                                <li>2</li>
+                                <li class="cart-add-remove cart-increase"></li>
+                            </ul>
+                        </div>
+                        <div class="price align-self-center">
+                            $275
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-between pt-4">
+                        <img class="cart-image" src="/dist/assets/img/cart/image 195.png" alt="">
+                        <span class="cart-delete"></span>
+                        <div class="product-info align-self-center">
+                            <h5>Commodo Blown Lamp</h5>
+                            <ul class="d-flex count-actions">
+                                <li class="cart-add-remove cart-decrease"></li>
+                                <li>2</li>
+                                <li class="cart-add-remove cart-increase"></li>
+                            </ul>
+                        </div>
+                        <div class="price align-self-center">
+                            $275
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-between pt-4">
+                        <img class="cart-image" src="/dist/assets/img/cart/image 198.png" alt="">
+                        <span class="cart-delete"></span>
+                        <div class="product-info align-self-center">
+                            <h5>Commodo Blown Lamp</h5>
+                            <ul class="d-flex count-actions">
+                                <li class="cart-add-remove cart-decrease"></li>
+                                <li>2</li>
+                                <li class="cart-add-remove cart-increase"></li>
+                            </ul>
+                        </div>
+                        <div class="price align-self-center">
+                            $275
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container hero-section mt-5 mt-lg-0">
+        <div class="row">
+            <div class="col col-lg-4 col-xl-3 d-none d-lg-block">3</div>
+            <div class="col col-lg-8 col-xl-9">
+                <div class="row">
+                    <div class="col col-12 col-md-8 pt-md-4 p-3">
+                        <div class="card img-fluid border-0">
+                            <img class="card-img-top" src="./dist/assets/img/covers/1.png" alt="Card image"
+                                style="width:100%">
+                            <div class="card-img-overlay pt-5 ps-5">
+                                <h4 class="card-title">Up to <span class="marked-text"> 60% </span> off sale</h4>
+                                <p class="card-text card-link">Find out more</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col col-12 col-md-4 pt-md-4 p-3">
+                        <div class="card img-fluid border-0">
+                            <img class="card-img-top" src="./dist/assets/img/covers/2.png" alt="Card image"
+                                style="width:100%">
+                            <div class="card-img-overlay pt-4 ps-4">
+                                <h4 class="card-title title-white">Unio Leather Bags</h4>
+                                <p class="card-text card-link card-link-white">Explore more</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col col-12 col-md-6 pt-md-4 p-3">
+                        <div class="card img-fluid border-0">
+                            <img class="card-img-top" src="./dist/assets/img/covers/3.png" alt="Card image"
+                                style="width:100%">
+                            <div class="card-img-overlay pt-4 ps-4">
+                                <h4 class="card-title title-white card-title-bottom">Game Accessories</h4>
+                                <p class="card-text card-link card-link-white">See more</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col col-12 col-md-6 pt-md-4 p-3">
+                        <div class="card img-fluid border-0">
+                            <img class="card-img-top" src="./dist/assets/img/covers/4.png" alt="Card image"
+                                style="width:100%">
+                            <div class="card-img-overlay pt-4 ps-4">
+                                <h4 class="card-title title-white card-title-right">Running New Arrivals</h4>
+                                <p class="card-text card-link card-link-white card-link-right">Find out more</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container padding-top-md-8">
+        <hr class="hr-devider" />
+        <div class="row card-slide-section padding-top-md-6">
+            <div class="col-12"><span class="top-title">- Our Products</span></div>
+            <div class="col-12">
+                <div class="d-flex justify-content-between">
+                    <div class="main-title">Explore our Products</div>
+                    <div class="mb-3">
+                        <button class="btn bg-custom-secondary rounded-circle next-prev-btn p-0 pt-2 me-3">
+                            <i class="icon-custom icon-arrow-left"></i>
+                        </button>
+                        <button class="btn bg-custom-secondary rounded-circle next-prev-btn p-0 pt-2">
+                            <i class="icon-custom icon-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="row">
+                    <div class="col-6 col-md-4 col-lg-3 position-relative">
+                        <div class="card-holder position-relative reveal-buy-action">
+                            <div class="card img-fluid border-0">
+                                <img class="card-img-top" src="./dist/assets/img/products/Product Image.png"
+                                    alt="Card image" style="width:100%">
+                            </div>
+                            <button class="btn btn-danger position-absolute top-0 end-0 rounded-pill discount">20%
+                                off</button>
+                            <div class="details">
+                                <h3>Serif Coffee Table</h3>
+                                <div class="price">
+                                    <span class="old">$30</span>
+                                    <span class="new">$20</span>
+                                </div>
+                            </div>
+                            <div class="row w-100 position-absolute bottom-0 buy-action d-none d-md-block">
+                                <div class="d-flex justify-content-between p-0">
+                                    <div>
+                                        <button class="btn btn-light rounded-circle favourite">
+                                            <img src="/dist/assets/icons/svgs/Heart.svg" alt="">
+                                        </button>
+                                    </div>
+                                    <div>
+                                        <button class="btn btn-light bg-custom-accent rounded-pill add-to-cart">
+                                            Add to Cart
+                                        </button>
+                                    </div>
+                                    <div>
+                                        <button class="btn btn-light rounded-circle seen">
+                                            <img src="/dist/assets/icons/svgs/view.svg" alt="">
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <ul class="color-selection">
+                                <li class="active" style="background-color: #906145;"></li>
+                                <li style="background-color: #FAB8C4;"></li>
+                                <li style="background-color: #DFBF9B;"></li>
+                            </ul>
+                        </div>
+
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3">
+                        <div class="card-holder position-relative reveal-buy-action">
+                            <div class="card img-fluid border-0">
+                                <img class="card-img-top" src="./dist/assets/img/products/Product Image2.png"
+                                    alt="Card image" style="width:100%">
+                            </div>
+
+                            <div class="details">
+                                <h3>Serif Coffee Table</h3>
+                                <div class="price">
+                                    <span class="old">$30</span>
+                                    <span class="new">$20</span>
+                                </div>
+                            </div>
+                            <div class="row w-100 position-absolute bottom-0 buy-action d-none d-md-block">
+                                <div class="d-flex justify-content-between p-0">
+                                    <div>
+                                        <button class="btn btn-light rounded-circle favourite">
+                                            <img src="/dist/assets/icons/svgs/Heart.svg" alt="">
+                                        </button>
+                                    </div>
+                                    <div>
+                                        <button class="btn btn-light bg-custom-accent rounded-pill add-to-cart">
+                                            Add to Cart
+                                        </button>
+                                    </div>
+                                    <div>
+                                        <button class="btn btn-light rounded-circle seen">
+                                            <img src="/dist/assets/icons/svgs/view.svg" alt="">
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <ul class="color-selection">
+                                <li class="active" style="background-color: #906145;"></li>
+                                <li style="background-color: #FAB8C4;"></li>
+                                <li style="background-color: #DFBF9B;"></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3">
+                        <div class="card-holder position-relative reveal-buy-action">
+                            <div class="card img-fluid border-0">
+                                <img class="card-img-top" src="./dist/assets/img/products/Product Image3.png"
+                                    alt="Card image" style="width:100%">
+                            </div>
+                            <button class="btn btn-danger position-absolute top-0 end-0 rounded-pill discount">20%
+                                off</button>
+                            <div class="details">
+                                <h3>Serif Coffee Table</h3>
+                                <div class="price">
+                                    <span class="old">$30</span>
+                                    <span class="new">$20</span>
+                                </div>
+                            </div>
+                            <div class="row w-100 position-absolute bottom-0 buy-action d-none d-md-block">
+                                <div class="d-flex justify-content-between p-0">
+                                    <div>
+                                        <button class="btn btn-light rounded-circle favourite">
+                                            <img src="/dist/assets/icons/svgs/Heart.svg" alt="">
+                                        </button>
+                                    </div>
+                                    <div>
+                                        <button class="btn btn-light bg-custom-accent rounded-pill add-to-cart">
+                                            Add to Cart
+                                        </button>
+                                    </div>
+                                    <div>
+                                        <button class="btn btn-light rounded-circle seen">
+                                            <img src="/dist/assets/icons/svgs/view.svg" alt="">
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <ul class="color-selection">
+                                <li class="active" style="background-color: #906145;"></li>
+                                <li style="background-color: #FAB8C4;"></li>
+                                <li style="background-color: #DFBF9B;"></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3">
+                        <div class="card-holder position-relative reveal-buy-action d-none d-md-block">
+                            <div class="card img-fluid border-0">
+                                <img class="card-img-top" src="./dist/assets/img/products/Product Image4.png"
+                                    alt="Card image" style="width:100%">
+                            </div>
+                            <button class="btn btn-danger position-absolute top-0 end-0 rounded-pill discount">20%
+                                off</button>
+                            <div class="details">
+                                <h3>Serif Coffee Table</h3>
+                                <div class="price">
+                                    <span class="old">$30</span>
+                                    <span class="new">$20</span>
+                                </div>
+                            </div>
+                            <div class="row w-100 position-absolute bottom-0 buy-action d-none d-md-block">
+                                <div class="d-flex justify-content-between p-0">
+                                    <div>
+                                        <button class="btn btn-light rounded-circle favourite">
+                                            <img src="/dist/assets/icons/svgs/Heart.svg" alt="">
+                                        </button>
+                                    </div>
+                                    <div>
+                                        <button class="btn btn-light bg-custom-accent rounded-pill add-to-cart">
+                                            Add to Cart
+                                        </button>
+                                    </div>
+                                    <div>
+                                        <button class="btn btn-light rounded-circle seen">
+                                            <img src="/dist/assets/icons/svgs/view.svg" alt="">
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <ul class="color-selection">
+                                <li class="active" style="background-color: #906145;"></li>
+                                <li style="background-color: #FAB8C4;"></li>
+                                <li style="background-color: #DFBF9B;"></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8"
+        crossorigin="anonymous"></script>
+    <script src="dist/js/script.js"></script>
+</body>
+
+</html>
